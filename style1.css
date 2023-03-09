@@ -127,36 +127,3 @@ font-weight: 400;
 font-style: normal; 
 	font-size:20px;
 }
-
-.previous{background-color:white;
-border:solid;
-border-color:chocolate;
-display:inline-block;
-padding:20px 50px;
-transition-duration:0.5s;
-border-radius:10px;
-font-family: ff-providence-sans-web-pro, sans-serif;
-font-weight: 400;
-font-style: normal;
-font-size: 24px;}
-
-.previous:hover{
-background-color:chocolate
-}
-
-.next{background-color:white;
-border:solid;
-border-color:#789931;
-padding:20px 50px;
-text-aligh:center;
-display:inline-block;
-border-radius:10px;
-font-family: ff-providence-sans-web-pro, sans-serif;
-font-weight: 400;
-font-style: normal;
-font-size: 24px;
-}
-
-.next:hover{
-background-color:#789931
-}

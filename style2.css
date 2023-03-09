@@ -27,3 +27,37 @@ position:relative;
 	margin-top:100px;
 	position:relative;
 }
+
+.previous{background-color:white;
+border:solid;
+border-color:chocolate;
+display:inline-block;
+height:60px;
+width:150px;
+transition-duration:0.5s;
+border-radius:10px;}
+
+.previous:hover{
+background-color:chocolate
+}
+
+.next{background-color:white;
+border:solid;
+border-color:#789931;
+height:60px;
+width:150px;
+text-aligh:center;
+display:inline-block;
+border-radius:10px;
+}
+
+.next:hover{
+background-color:#789931
+}
+
+.buttontext{
+font-family: ff-providence-sans-web-pro, sans-serif;
+font-weight: 400;
+font-style: normal;
+font-size: 25px;
+line-height: 35px;}

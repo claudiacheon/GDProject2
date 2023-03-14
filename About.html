@@ -10,20 +10,62 @@ a.one:link {color:chocolate;
 	text-decoration: none;}
 a.one:visited {color:chocolate;}
 a.one:hover {color:chocolate;}
+	body{background-image:url("squared-paper-texture.jpg");
+			background-size: 100%
+		}
 		</style>
 <title> Paper Crane | About</title>
+<script type="text/javascript">
+	
+const popup = document.getElementsByClassName("popup")
+const buttontext = document.getElementsByClassName("buttontext")
+const Image2 = document.getElementById('Image2')
 
+Image2.addEventListener('click',()=>{
+	buttontext.classlist.add('open-popup')});
+	
+buttontext.addEventListener('click',()=>{
+	buttontext.classlist.remove("open-popup")});
+		
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
 </head>
-<body>
+<body onLoad="MM_preloadImages('Crane/Aboutcrane1-2.png')">
 <header> 
 	<h1><div class="headcontainer"> <a class="one" href="https://claudiacheon.github.io/GDProject2/" title="Main Page"><img src="Crane/craneicon.png" width="50" height="50" alt="paper crane icon"/></a> <a class="one" href="https://claudiacheon.github.io/GDProject2/" title="Main Page">Paper Crane</a></div></h1>
 </header>
 	<div class="wrapper">
 
-
+	  <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image2','','Crane/Aboutcrane1-2.png',1)"><img src="Crane/Aboutcrane1-1.png" alt="" width="300" height="300" id="Image2"></a> 
 	
-	
-  </div>
+	  <div class="popup" id="green">
+	  <p1>Paper folding, or origami, is a form of art where you fold a piece of paper (often square and coloured) to form a certain shape, such as an animal, a vehicle, or a plant. As you can guess with the name 'origami', paper folding is majorly practiced in Japan. The word origami is derived from two Japanese words—'ori', which means to fold, and 'kami', which means paper. The  </p1>
+	  <button class="buttontext green previous" onclick="closepopup()">Back</button>
+		  </div>
+		
+		<h1>History of Paper Folding</h1>
+		
+		</div>
 
 </body>
 </html>

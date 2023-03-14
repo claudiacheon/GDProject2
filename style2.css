@@ -27,32 +27,48 @@ position:relative;
 	margin-top:100px;
 	position:relative;
 }
+.stepbuttoncontainer{
+margin-top:10px;
+	height:10px;
+margin-bottom:100px;
+position:relative;}
 
-.previous{background-color:white;
-border:solid;
+.previous{background-color:#F5F2EE;
+border:dashed;
 border-color:chocolate;
 display:inline-block;
 height:60px;
 width:150px;
 transition-duration:0.5s;
-border-radius:10px;}
-
-.previous:hover{
-background-color:chocolate
+border-radius:10px;
+position:absolute;
+bottom:5px;
+left:200px;
 }
 
-.next{background-color:white;
-border:solid;
+.previous:hover{
+background-color:chocolate;
+	color:white;
+}
+
+.next{background-color:#F5F2EE;
+border:dashed;
 border-color:#789931;
 height:60px;
 width:150px;
 text-aligh:center;
 display:inline-block;
 border-radius:10px;
+transition-duration:0.5s;
+position:absolute;
+bottom:5px;
+right:200px;
+
 }
 
 .next:hover{
-background-color:#789931
+background-color:#789931;
+	color:white;
 }
 
 .buttontext{
@@ -61,3 +77,70 @@ font-weight: 400;
 font-style: normal;
 font-size: 25px;
 line-height: 35px;}
+
+.aboutback{background-color:white;
+border:solid;
+border-color:chocolate;
+display:inline-block;
+height:60px;
+width:150px;
+transition-duration:0.5s;
+border-radius:10px;}
+
+.aboutback:hover{
+background-color:chocolate;
+	color:white;
+}
+
+.green{color:#789931;
+border-color:#789931;
+background-color:#F5F2EE
+}
+.green:hover{background-color:#789931;
+color:white}
+#green{border-color:#789931;}
+
+.blue{color:#789931;
+border-color:#789931;
+background-color:#F5F2EE
+}
+.blue:hover{background-color:#789931;
+color:white}
+#blue{border-color:#789931;}
+
+.purple{color:#789931;
+border-color:#789931;
+background-color:#F5F2EE
+}
+.purple:hover{background-color:#789931;
+color:white}
+#purple{border-color:#789931;}
+
+
+
+.popup{
+display:inline-block;
+  width: 400px;
+  background-color: #F5F2EE;
+  color: black;
+  text-align: center;
+  border-style:dashed;
+  border-radius: 10px;
+  padding: 40px 40px;
+  position: absolute;
+  top:250px;
+left:200px;
+transform:translate(-50%, -50%)scale(0.1);
+visibility:hidden;
+transition: transform 0.4s, top 0.4s;
+}
+
+.popup .previous {margin-top:30px;}
+
+.popup .open-popup{
+	visibility:visible;
+	top:50%;
+	left:50%;
+	transform:scale(1)
+		
+}

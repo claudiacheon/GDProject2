@@ -3,6 +3,17 @@
 body {background-color:white;
 margin-left: 30px;
 margin-top:10px;}
+#bgimage {
+  height: 200px;
+  width: 200px;
+  background:url("squared-paper-texture.jpg");
+	background-size: 200px 200px;}
+
+#headerabout{margin-left:50px;
+border-style:dashed;
+padding:10px 10px;
+padding-bottom:5px;
+border-radius:10px;}
 
 h1  {color:chocolate;
 font-family: ff-providence-sans-web-pro, sans-serif;
@@ -88,11 +99,21 @@ max-width:1170px;
 	padding-right:20px;
 	padding-bottom:200px;
 }
+.stepwrapper{ margin-right:auto; 
+margin-left: auto; 
+	margin-top:100px;
+max-width:1170px; 
+	padding-left:20px;
+	padding-right:20px;
+	padding-bottom:200px;
+}
 
 .sidebar {
-  border: none;
+  border: dashed;
+ border-radius:10px;
+	border-color:chocolate;
   padding: 15px;
-  background-color: #E7E7E7;
+  background-color: #F5F2EE;
 	width: 25%;
 	max-width: 300px;
 	height:550px;
@@ -127,3 +148,4 @@ font-weight: 400;
 font-style: normal; 
 	font-size:20px;
 }
+

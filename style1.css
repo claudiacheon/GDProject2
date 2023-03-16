@@ -2,7 +2,10 @@
 /* CSS Document */
 body {background-color:white;
 margin-left: 30px;
-margin-top:10px;}
+margin-top:10px;
+background-image:url("squared-paper-texture.jpg");
+background-size: 100%}
+
 #bgimage {
   height: 200px;
   width: 200px;
@@ -20,6 +23,18 @@ color:chocolate;}
 a.one:visited {text-decoration:none;
 color:chocolate;}
 a.one:hover {text-decoration:none;}
+
+a.two:link {text-decoration: none;
+color:#789931;}
+a.two:visited {text-decoration:none;
+color:#789931;}
+a.two:hover {text-decoration:none;}
+
+a.three:link {text-decoration: none;
+color:#318499;}
+a.three:visited {text-decoration:none;
+color:#318499;}
+a.three:hover {text-decoration:none;}
 
 h1  {color:chocolate;
 font-family: ff-providence-sans-web-pro, sans-serif;
@@ -61,6 +76,7 @@ font-style: normal;
 font-size:30px;
 text-align: center;
 margin-top:50px;}
+
 .mainphoto {
   display: block;
   margin-left: auto;
@@ -75,17 +91,6 @@ position:relative;
 
 }
 
-.Navigation {
-margin-left:40px;
-	margin-top: 30px;
-color:chocolate;
-font-family: ff-providence-sans-web-pro, sans-serif;
-font-weight: 400;
-font-style: normal;
-font-size: 25px;
-	line-height: 35px;
-position: sticky;
-}
 
 .photo{max-width: 600px;
 margin:auto;
@@ -112,22 +117,18 @@ max-width:1170px;
 	padding-left:20px;
 	padding-right:20px;
 	padding-bottom:200px;
+	display:flex;
+	justify-content: space-between;
 }
 
-.sidebar {
-  border: dashed;
- border-radius:10px;
-	border-color:chocolate;
-  padding: 15px;
-  background-color: #F5F2EE;
-	width: 25%;
-	max-width: 300px;
-	height:550px;
-	float:left;
-	position:absolute;
-	top:200px;
-	left:50px;
-}
+.aboutwrapper{ margin-right:auto; 
+margin-left: auto; 
+max-width:1170px; 
+	margin-top:150px;
+	padding-left:20px;
+	padding-right:20px;
+	padding-bottom:200px;}
+
 
 p1 {color:black;
 font-family: interstate, sans-serif;
@@ -140,18 +141,4 @@ p2 {color:white;
 font-family: interstate-mono, monospace;
 font-weight: 400;
 font-style: normal;}
-
-
-.hovertext{
-	
-	
-}
-
-.hovertypeset{
-color:black;
-font-family: interstate, sans-serif;
-font-weight: 400;
-font-style: normal; 
-	font-size:20px;
-}
 

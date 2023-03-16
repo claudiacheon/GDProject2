@@ -5,28 +5,25 @@
 <link rel="stylesheet" href="https://use.typekit.net/vin3uje.css">
 <link rel="stylesheet" href="style1.css">
 <link rel="stylesheet" href="style2.css">
-<style>
-a.one:link {color:chocolate;
-	text-decoration: none;}
-a.one:visited {color:chocolate;}
-a.one:hover {color:chocolate;}
-	body{background-image:url("squared-paper-texture.jpg");
-			background-size: 100%
-		}
-		</style>
-<title> Paper Crane | About</title>
-<script type="text/javascript">
-	
-const popup = document.getElementsByClassName("popup")
-const buttontext = document.getElementsByClassName("buttontext")
-const Image2 = document.getElementById('Image2')
+<link rel="stylesheet" href="popupstyle.css">
 
-Image2.addEventListener('click',()=>{
-	buttontext.classlist.add('open-popup')});
+<title> Paper Crane | About</title>
 	
-buttontext.addEventListener('click',()=>{
-	buttontext.classlist.remove("open-popup")});
-		
+<script type="text/javascript">
+
+function myFunction1() {
+  var popup = document.getElementById("myPopup");
+  popup.classList.toggle("show");
+}
+function myFunction2() {
+  var popup = document.getElementById("myPopup2");
+  popup.classList.toggle("show");
+}
+function myFunction3() {
+  var popup = document.getElementById("myPopup3");
+  popup.classList.toggle("show");
+}
+	
 function MM_swapImgRestore() { //v3.0
   var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
 }
@@ -52,19 +49,39 @@ function MM_swapImage() { //v3.0
 </head>
 <body onLoad="MM_preloadImages('Crane/Aboutcrane1-2.png')">
 <header> 
-	<h1><div class="headcontainer"> <a class="one" href="https://claudiacheon.github.io/GDProject2/" title="Main Page"><img src="Crane/craneicon.png" width="50" height="50" alt="paper crane icon"/></a> <a class="one" href="https://claudiacheon.github.io/GDProject2/" title="Main Page">Paper Crane</a></div></h1>
-</header>
-	<div class="wrapper">
-
-	  <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image2','','Crane/Aboutcrane1-2.png',1)"><img src="Crane/Aboutcrane1-1.png" alt="" width="300" height="300" id="Image2"></a> 
+	<h1><div class="headcontainer"> <a class="one" href="https://claudiacheon.github.io/GDProject2/" title="Main Page"><img src="Crane/craneicon.png" width="50" height="50" alt="paper crane icon"/></a> <a class="one" href="https://claudiacheon.github.io/GDProject2/" title="Main Page">Paper Crane</a> <a class="one" href="https://claudiacheon.github.io/GDProject2/About" title="About"><div id="headerabout">About</div></a></div></h1>
 	
-	  <div class="popup" id="green">
-	  <p1>Paper folding, or origami, is a form of art where you fold a piece of paper (often square and coloured) to form a certain shape, such as an animal, a vehicle, or a plant. As you can guess with the name 'origami', paper folding is majorly practiced in Japan. The word origami is derived from two Japanese words—'ori', which means to fold, and 'kami', which means paper. The  </p1>
-	  <button class="buttontext green previous" onclick="closepopup()">Back</button>
-		  </div>
+</header>
+	<div class="aboutwrapper">
+
 		
-		<h1>History of Paper Folding</h1>
+		<div class="popup" onclick="myFunction1()">
+			<a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image2','','Crane/mainpagecrane2.png',1)"><img src="Crane/mainpagecrane1.png" alt="" width="300" height="300" id="Image2"> </a> 
+            <h1>History of paper folding</h1>
+  <span class="popuptext" id="myPopup"><p1>Paper folding, or origami, is a form of art where you fold a piece of paper (often square and coloured) to form a certain shape, such as an animal, a vehicle, or a plant. As you can guess with the name 'origami', paper folding is majorly practiced in Japan. The word origami is derived from two Japanese words—'ori', which means to fold, and 'kami', which means paper. </p1>
+			<h1><a class="one" href="https://mymodernmet.com/history-of-origami-definition/" title="Origami: How the Ancient Art of Paper Folding Evolved Over Time and Continues to Inspire">Read More</a></h1>
+			<h1><a class="one" href="https://www.britannica.com/art/origami/History-of-origami" title="History of origami">Read More</a></h1></span>
+			
+</div>
+		<div class="popup" onclick="myFunction2()">
+			<a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image3','','Crane/Aboutcrane2-2.png',1)"><img src="Crane/Aboutcrane2-1.png" alt="" width="300" height="300" id="Image3"> </a> 
+            <h1 class="blue">Meaning of paper crane</h1>
+  <span class="popuptext blue" id="myPopup2"><p1>In Eastern Asian countries, crane is often portrayed as a mythical creature that brings luck. Such folklore is most prominent in Japan, and the folklore of one thousand paper cranes bringing luck was also derived from the portrayal of crane as a symbol of luck and long-living. The belief that folding one thousand paper cranes will grant your wish became more famous with story of Sadako Sasaki.</p1>
+			<h1><a class="three" href="https://mymodernmet.com/origami-crane-meaning/" title="Unfold The Intricate History and Symbolism of the Origami Crane">Read More</a></h1></span>
+</div>
 		
+		<div class="popup" onclick="myFunction3()">
+			<a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image4','','Crane/Aboutcrane1-2.png',1)"><img src="Crane/Aboutcrane1-1.png" alt="" width="300" height="300" id="Image4"> </a> 
+            <h1 class="green">Check out these sites!</h1>
+			
+  <span class="popuptext green" id="myPopup3">
+	  <p1>Check out these great sites for interesting facts!</p1>
+	  <h1><a class="two" href="https://ccchenyh.github.io/Born-In-X/" title="Born In X">Born In X</a></h1>
+	  
+	  <h1><a class="two" href="https://jeninepaulose.github.io/COLOUR-AURA-Jenine-Paulose/" title="Colour Aura">Colour Aura</a></h1>
+			</span>
+</div>
+
 		</div>
 
 </body>
